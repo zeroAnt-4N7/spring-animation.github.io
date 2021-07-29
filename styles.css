@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+}
+.container{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 70px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.spiralA{
+     width:100px;
+    height: 100px;
+    border-left: 10px solid green;
+    border-radius: 50% 0 0 50%;
+    transform: rotateX(75deg);
+    position: absolute;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+}
+
+.spiralB{
+    width:100px;
+    height: 100px;
+    border-right: 10px solid green;
+    border-radius: 0 50% 50% 0;
+    transform-origin: 100% 0%;
+    transform: rotateX(100deg);
+    position: absolute;
+    
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+}
+
+#d1{
+    left: 0px;
+    bottom: 0px;
+    animation-name: d1;
+}
+#d2{
+    left: -40px;
+    bottom: -40px;
+    animation-name: d2;
+}
+#d3{
+    left: 0px;
+    bottom: 40px;
+    animation-name: d3;
+}
+#d4{
+    left: -40px;
+    bottom: 0px;
+    animation-name: d4;
+}
+#d5{
+    left: 0px;
+    bottom: 80px;
+    animation-name: d5;
+}
+#d6{
+    left: -40px;
+    bottom: 40px;
+    animation-name: d6;
+}
+#d7{
+    left: 0px;
+    bottom: 120px;
+    animation-name: d7;
+}
+#d8{
+    left: -40px;
+    bottom: 80px;
+    animation-name: d8;
+}
+#d9{
+    left: 0px;
+    bottom: 160px;
+    animation-name: d9;
+}
+#d10{
+    left: -40px;
+    bottom: 120px;
+    animation-name: d10;
+}
+
+
+
+@keyframes d1{
+    from{transform: rotateX(75deg);}
+    to{transform: rotateX(85deg);}
+}
+@keyframes d2{
+    from{transform: rotateX(100deg);
+    bottom: -40px;}
+    to{transform: rotateX(95deg);
+    bottom: -45px;}
+}
+@keyframes d3{
+    from{transform: rotateX(75deg);
+    bottom: 40px;}
+    90%{bottom: 20px;}
+    to{transform: rotateX(85deg);
+    bottom: 20px;}
+}
+@keyframes d4{
+    from{transform: rotateX(100deg);
+    bottom: 0px;}
+    90%{
+        bottom: -26px;
+    }
+    to{transform: rotateX(95deg);
+    bottom: -26px;}
+}
+@keyframes d5{
+     from{transform: rotateX(75deg);
+    bottom: 80px;}
+    90%{bottom: 40px;}
+    to{transform: rotateX(85deg);
+    bottom: 40px;}
+}
+@keyframes d6{
+    from{transform: rotateX(100deg);
+    bottom: 40px;}
+    90%{
+        bottom: -5px;
+    }
+    to{transform: rotateX(95deg);
+    bottom: -5px;}
+}
+@keyframes d7{
+    from{transform: rotateX(75deg);
+    bottom: 120px;}
+    90%{bottom: 60px;}
+    to{transform: rotateX(85deg);
+    bottom: 60px;}
+}
+@keyframes d8{
+    from{transform: rotateX(100deg);
+    bottom: 80px;}
+    90%{
+        bottom: 15px;
+    }
+    to{transform: rotateX(95deg);
+    bottom: 15px;}
+}
+@keyframes d9{
+    from{transform: rotateX(75deg);
+    bottom: 160px;}
+    90%{bottom: 80px;}
+    to{transform: rotateX(85deg);
+    bottom: 80px;}
+}
+@keyframes d10{
+    from{transform: rotateX(100deg);
+    bottom: 120px;}
+    90%{
+        bottom: 35px;
+    }
+    to{transform: rotateX(95deg);
+    bottom: 35px;}
+}
